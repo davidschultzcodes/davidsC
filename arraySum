@@ -1,0 +1,28 @@
+//sums all positive numbers in the array
+
+
+/*
+#include <iostream>
+//David Schultz
+//sums all positive numbers in the array
+using namespace std;
+
+void sum_positive(int a[6]) {
+    int sum=0;
+    for (int i=0; i<6; i++){
+        if(a[i]>0){
+            sum=sum+a[i];
+        }
+    }
+    cout << sum << " is the sum of the positive values" << endl;
+}
+int main() {
+    
+    int a[6] = {3, -3, 5, 2, -1, 2};
+    if(a[0]<0||a[0]>0){
+        sum_positive(a);
+    }
+    else{
+        return 0;
+    }
+}
