@@ -1,0 +1,25 @@
+//program to test if input is a perfect square
+
+#include <iostream>
+#include <cmath>
+//program to test if input is a perfect square
+//David Schultz
+using namespace std;
+int main(){
+    int x;
+    int y;
+    do{
+        cout << "Enter a number to test if its a perfect square: ";
+        cin >> x;
+        int sq=sqrt(x);
+        if(sq*sq==x){
+            y=2;
+            cout << "Correct" << endl;
+        }
+        else{
+            y=1;
+            cout << "Try again: " << endl;
+        }
+    }
+    while(y!=2);
+}
