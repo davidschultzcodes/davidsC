@@ -1,0 +1,25 @@
+//string reversal
+
+
+#include <iostream>
+#include <cstring>
+//David Schultz
+//string reversal
+using namespace std;
+void revString(string& s)
+{
+    int length = s.length();
+    int n = length-1;
+    int i = 0;
+    while(i<=n){
+        swap(s[i],s[n]);
+        n--;
+        i++;
+    }
+}
+int main()
+{
+    string s = "abcde";
+    revString(s);
+    cout << "The string reversed is: "<< s << endl;
+}
